@@ -1,0 +1,9 @@
+{
+  "uri": "mongodb://localhost:27017/mydb",
+  "db": "mydb",
+  "out": "./mydb",
+  "in": "./mydb",
+  "collections": ["users", "posts"],
+  "pretty": true,
+  "drop": false
+}

@@ -1,0 +1,54 @@
+{
+  "name": "mongo-save",
+  "version": "1.0.0",
+  "description": "MongoDB veritabanı yedekleme ve geri yükleme aracı (Mongoose + EJSON)",
+  "bin": {
+    "mongo-save": "src/index.js"
+  },
+  "type": "commonjs",
+  "main": "src/api.js",
+  "exports": {
+    ".": "./src/api.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE",
+    ".env.example"
+  ],
+  "scripts": {
+    "start": "node src/index.js --help",
+    "backup": "node src/index.js backup",
+    "restore": "node src/index.js restore",
+    "test": "node test/run-tests.js",
+    "lint": "echo no lint configured"
+  },
+  "keywords": [
+    "mongodb",
+    "mongoose",
+    "backup",
+    "restore",
+    "ejson"
+  ],
+  "author": "seyfooksck <seyfooksck@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seyfooksck/mongo-save.git"
+  },
+  "bugs": {
+    "url": "https://github.com/seyfooksck/mongo-save/issues"
+  },
+  "homepage": "https://github.com/seyfooksck/mongo-save#readme",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "bson": "^6.8.0",
+    "dotenv": "^16.4.5",
+    "fs-extra": "^11.2.0",
+    "mongoose": "^8.6.3",
+    "yargs": "^17.7.2"
+  }
+}
